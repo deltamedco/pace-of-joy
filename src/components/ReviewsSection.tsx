@@ -14,7 +14,7 @@ const reviews = [
     result: "First Marathon Finisher",
   },
   {
-    name: "Emily K.",
+    name: "Yesha Patel",
     text: "The personalized training plans are incredible. Every workout has a purpose, and I've never felt more prepared on race day.",
     stars: 5,
     result: "BQ Qualifier",
