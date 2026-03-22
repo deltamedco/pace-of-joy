@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 
 const reviews = [
   {
-    name: "Sarah M.",
+    name: "Hery Shah",
     text: "Coach Maulik helped me shave 45 minutes off my marathon time. His data-driven approach and constant motivation made all the difference.",
     stars: 5,
     result: "3:45 → 3:00 Marathon",
