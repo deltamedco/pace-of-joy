@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import arynLogo from "@/assets/aryn-logo.png";
 
 const links = [
   { label: "Why Train", href: "#why-train" },
@@ -13,8 +14,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#" className="font-heading text-2xl font-bold text-primary tracking-wider">
-          ARYN.
+        <a href="#">
+          <img src={arynLogo} alt="ARYN Logo" className="h-10" />
         </a>
 
         {/* Desktop */}
