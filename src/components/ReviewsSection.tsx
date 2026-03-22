@@ -2,19 +2,19 @@ import { Star } from "lucide-react";
 
 const reviews = [
   {
-    name: "Sarah M.",
+    name: "Hery Shah",
     text: "Coach Maulik helped me shave 45 minutes off my marathon time. His data-driven approach and constant motivation made all the difference.",
     stars: 5,
     result: "3:45 → 3:00 Marathon",
   },
   {
-    name: "Raj P.",
+    name: "Keyuri Shah",
     text: "I went from barely finishing a half marathon to confidently racing a full. The nutrition and mental coaching were game-changers.",
     stars: 5,
     result: "First Marathon Finisher",
   },
   {
-    name: "Emily K.",
+    name: "Yesha Patel",
     text: "The personalized training plans are incredible. Every workout has a purpose, and I've never felt more prepared on race day.",
     stars: 5,
     result: "BQ Qualifier",
