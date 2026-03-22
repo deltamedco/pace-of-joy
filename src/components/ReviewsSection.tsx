@@ -8,7 +8,7 @@ const reviews = [
     result: "3:45 → 3:00 Marathon",
   },
   {
-    name: "Raj P.",
+    name: "Keyuri Shah",
     text: "I went from barely finishing a half marathon to confidently racing a full. The nutrition and mental coaching were game-changers.",
     stars: 5,
     result: "First Marathon Finisher",
