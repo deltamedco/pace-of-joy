@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Coach Maulik Joshi running on track" className="w-full h-full object-contain object-[center_30%] scale-110" />
+        <img src={heroImage} alt="Coach Maulik Joshi running on track" className="w-full h-full object-cover object-[center_25%] scale-90" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/60 to-transparent" />
       </div>
 
