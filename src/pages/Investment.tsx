@@ -1,0 +1,153 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { Check, ArrowRight } from "lucide-react";
+
+const packages = [
+  {
+    name: "The Foundation",
+    subtitle: "Base Preparation",
+    price: "Free",
+    priceNote: "Complimentary with any Race Training signup",
+    duration: "4 to 8 Weeks (Pre-training)",
+    focus:
+      "Building the 'engine' and structural integrity before the high-intensity race block begins.",
+    features: [
+      "30-minute introductory call — running history, injury background, and goal setting",
+      "4 to 8 week base mileage build to safely prepare tendons and ligaments",
+      "Unlimited email/message support with 24–48 hour response time",
+    ],
+    highlight: false,
+  },
+  {
+    name: "The Half Marathon",
+    subtitle: "13.1-Mile Training",
+    price: "$300",
+    priceNote: "",
+    duration: "8 to 12 Weeks",
+    focus:
+      "Developing speed-endurance and a rock-solid pacing strategy for the 13.1-mile distance.",
+    features: [
+      "Customized training plan designed around your goal time (Finisher, Sub-2:00, etc.)",
+      "Bi-weekly progress reviews via WhatsApp, FaceTime, or in person",
+      "In-person running sessions (Chicagoland area)",
+      "Up to 6 one-on-one consultations included",
+      "Unlimited email/message support with 24–48 hour response time",
+    ],
+    highlight: false,
+  },
+  {
+    name: "The Marathon",
+    subtitle: "26.2-Mile Journey",
+    price: "$500",
+    priceNote: "",
+    duration: "12 to 16 Weeks",
+    focus:
+      "A comprehensive, high-touch partnership for the full 26.2-mile journey.",
+    features: [
+      "Personalized training plan for your target time (Finisher, Sub-4:00, etc.)",
+      "Bi-weekly progress reviews via WhatsApp, FaceTime, or in person",
+      "Full race-day blueprint — pre-race carb-loading to the final mile",
+      "In-person running sessions (Chicagoland area)",
+      "Up to 10 one-on-one consultations included",
+      "Unlimited email/message support with 24–48 hour response time",
+    ],
+    highlight: true,
+  },
+];
+
+const Investment = () => {
+  return (
+    <div className="min-h-screen">
+      <Navbar />
+      <section className="pt-32 pb-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-primary font-heading text-sm font-semibold uppercase tracking-[0.3em] mb-3">
+              Training Packages
+            </p>
+            <h1 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Your Investment
+            </h1>
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Every package includes the complimentary Foundation phase to build your base before
+              race-specific training begins.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {packages.map((pkg) => (
+              <div
+                key={pkg.name}
+                className={`rounded-xl p-8 flex flex-col border ${
+                  pkg.highlight
+                    ? "border-primary bg-card shadow-lg shadow-primary/10 relative"
+                    : "border-border bg-card"
+                }`}
+              >
+                {pkg.highlight && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-gold px-4 py-1 rounded-full">
+                    <span className="font-heading text-xs font-semibold uppercase tracking-wider text-primary-foreground">
+                      Most Popular
+                    </span>
+                  </div>
+                )}
+
+                <div className="mb-6">
+                  <h3 className="font-heading text-2xl font-bold text-foreground">
+                    {pkg.name}
+                  </h3>
+                  <p className="text-primary text-sm font-semibold uppercase tracking-wider mt-1">
+                    {pkg.subtitle}
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <span className="font-heading text-4xl font-bold text-foreground">
+                    {pkg.price}
+                  </span>
+                  {pkg.priceNote && (
+                    <p className="text-muted-foreground text-xs mt-1">{pkg.priceNote}</p>
+                  )}
+                </div>
+
+                <div className="gold-border-accent pl-4 mb-6">
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-1">
+                    Duration
+                  </p>
+                  <p className="text-sm text-foreground">{pkg.duration}</p>
+                </div>
+
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                  {pkg.focus}
+                </p>
+
+                <ul className="space-y-3 mb-8 flex-1">
+                  {pkg.features.map((feature, i) => (
+                    <li key={i} className="flex gap-3 text-sm">
+                      <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                      <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="/#contact"
+                  className={`flex items-center justify-center gap-2 font-heading text-sm font-semibold uppercase tracking-wider px-6 py-3 rounded-lg transition-all ${
+                    pkg.highlight
+                      ? "bg-gradient-gold text-primary-foreground hover:opacity-90"
+                      : "border border-primary/40 text-primary hover:bg-primary/10"
+                  }`}
+                >
+                  Get Started <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
+export default Investment;
