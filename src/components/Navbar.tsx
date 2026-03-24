@@ -13,15 +13,15 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-border/50">
-      <div className="container mx-auto px-6 flex items-center justify-between h-24">
+      <div className="container mx-auto px-6 flex items-center justify-between h-20">
         <a href="#">
-          <img src={arynLogo} alt="ARYN Logo" className="h-20 md:h-24" />
+          <img src={arynLogo} alt="ARYN Logo" className="h-14 md:h-16" />
         </a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a key={l.label} href={l.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a key={l.label} href={l.href} className="text-sm font-bold text-foreground hover:text-primary transition-colors">
               {l.label}
             </a>
           ))}
