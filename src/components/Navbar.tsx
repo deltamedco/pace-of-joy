@@ -1,31 +1,62 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import arynLogo from "@/assets/aryn-logo.png";
 
 const links = [
-  { label: "Why Train", href: "#why-train" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
+  { label: "Why Train", href: "/#why-train", isHash: true },
+  { label: "Training", href: "/#training", isHash: true },
+  { label: "Gear", href: "/#gear", isHash: true },
+  { label: "Reviews", href: "/#reviews", isHash: true },
+  { label: "Investment", href: "/investment", isHash: false },
+  { label: "Contact", href: "/#contact", isHash: true },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  const handleClick = (link: typeof links[0]) => {
+    setOpen(false);
+    if (link.isHash && location.pathname === "/") {
+      const id = link.href.replace("/#", "");
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 flex items-center justify-between h-20">
-        <a href="#">
+        <Link to="/">
           <img src={arynLogo} alt="ARYN Logo" className="h-14 md:h-16" />
-        </a>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <a key={l.label} href={l.href} className="text-sm font-bold text-[#0a1628] hover:text-primary transition-colors">
-              {l.label}
-            </a>
-          ))}
-          <a href="#contact" className="bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground hover:opacity-90 transition-opacity">
+          {links.map((l) =>
+            l.isHash ? (
+              <a
+                key={l.label}
+                href={l.href}
+                onClick={() => handleClick(l)}
+                className="text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link
+                key={l.label}
+                to={l.href}
+                className="text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+              >
+                {l.label}
+              </Link>
+            )
+          )}
+          <a
+            href="/#contact"
+            className="bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground hover:opacity-90 transition-opacity"
+          >
             Get Started
           </a>
         </div>
@@ -38,13 +69,33 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-background border-b border-border px-6 py-4 space-y-3">
-          {links.map((l) => (
-            <a key={l.label} href={l.href} onClick={() => setOpen(false)} className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-              {l.label}
-            </a>
-          ))}
-          <a href="#contact" onClick={() => setOpen(false)} className="block bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground text-center">
+        <div className="md:hidden bg-white border-b border-border px-6 py-4 space-y-3">
+          {links.map((l) =>
+            l.isHash ? (
+              <a
+                key={l.label}
+                href={l.href}
+                onClick={() => handleClick(l)}
+                className="block text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link
+                key={l.label}
+                to={l.href}
+                onClick={() => setOpen(false)}
+                className="block text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+              >
+                {l.label}
+              </Link>
+            )
+          )}
+          <a
+            href="/#contact"
+            onClick={() => setOpen(false)}
+            className="block bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground text-center"
+          >
             Get Started
           </a>
         </div>
