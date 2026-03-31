@@ -6,7 +6,6 @@ import arynLogo from "@/assets/aryn-logo.png";
 const links = [
   { label: "Home", href: "/", isHash: false },
   { label: "Training", href: "/training-gear", isHash: false },
-  { label: "Reviews", href: "/#reviews", isHash: true },
   { label: "Investment", href: "/investment", isHash: false },
 ];
 
