@@ -139,6 +139,7 @@ const Investment = () => {
           </div>
         </div>
       </section>
+      <ContactSection />
       <Footer />
     </div>
   );
