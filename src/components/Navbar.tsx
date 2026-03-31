@@ -4,8 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 import arynLogo from "@/assets/aryn-logo.png";
 
 const links = [
-  { label: "Why Train", href: "/#why-train", isHash: true },
-  { label: "Training & Gear", href: "/training-gear", isHash: false },
+  { label: "Home", href: "/#why-train", isHash: true },
+  { label: "Training", href: "/training-gear", isHash: false },
   { label: "Reviews", href: "/#reviews", isHash: true },
   { label: "Investment", href: "/investment", isHash: false },
   { label: "Contact", href: "/#contact", isHash: true },
