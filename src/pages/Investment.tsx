@@ -51,7 +51,7 @@ const packages = [
       "Up to 10 one-on-one consultations included",
       "Unlimited email/message support with 24–48 hour response time",
     ],
-    highlight: true,
+    highlight: false,
   },
 ];
 
