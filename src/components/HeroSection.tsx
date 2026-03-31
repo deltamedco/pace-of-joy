@@ -1,6 +1,6 @@
 import heroImage from "@/assets/hero-coach.jpg";
 import marathonImage from "@/assets/hero-marathon.jpg";
-import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -35,18 +35,12 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#contact"
+              <Link
+                to="/investment"
                 className="bg-gradient-gold font-heading text-sm font-semibold uppercase tracking-wider px-8 py-3 rounded text-primary-foreground hover:opacity-90 transition-opacity"
               >
                 Start Training
-              </a>
-              <a
-                href="mailto:aryn.coachmj@gmail.com"
-                className="border border-primary/40 font-heading text-sm font-semibold uppercase tracking-wider px-8 py-3 rounded text-primary hover:bg-primary/10 transition-colors flex items-center gap-2"
-              >
-                <Mail className="w-4 h-4" /> Contact Me
-              </a>
+              </Link>
             </div>
           </div>
 
