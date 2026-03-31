@@ -51,12 +51,12 @@ const Navbar = () => {
               </Link>
             )
           )}
-          <a
-            href="/#contact"
+          <Link
+            to="/investment"
             className="bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground hover:opacity-90 transition-opacity"
           >
             Get Started
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
