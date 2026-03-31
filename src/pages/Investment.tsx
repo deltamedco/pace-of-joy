@@ -51,7 +51,7 @@ const packages = [
       "Up to 10 one-on-one consultations included",
       "Unlimited email/message support with 24–48 hour response time",
     ],
-    highlight: true,
+    highlight: false,
   },
 ];
 
@@ -84,13 +84,6 @@ const Investment = () => {
                     : "border-border bg-card"
                 }`}
               >
-                {pkg.highlight && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-gold px-4 py-1 rounded-full">
-                    <span className="font-heading text-xs font-semibold uppercase tracking-wider text-primary-foreground">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
 
                 <div className="mb-6">
                   <h3 className="font-heading text-2xl font-bold text-foreground">

@@ -4,11 +4,10 @@ import { Link, useLocation } from "react-router-dom";
 import arynLogo from "@/assets/aryn-logo.png";
 
 const links = [
-  { label: "Home", href: "/#why-train", isHash: true },
+  { label: "Home", href: "/", isHash: false },
   { label: "Training", href: "/training-gear", isHash: false },
   { label: "Reviews", href: "/#reviews", isHash: true },
   { label: "Investment", href: "/investment", isHash: false },
-  { label: "Contact", href: "/#contact", isHash: true },
 ];
 
 const Navbar = () => {
@@ -52,12 +51,12 @@ const Navbar = () => {
               </Link>
             )
           )}
-          <a
-            href="/#contact"
+          <Link
+            to="/investment"
             className="bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground hover:opacity-90 transition-opacity"
           >
             Get Started
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -90,13 +89,13 @@ const Navbar = () => {
               </Link>
             )
           )}
-          <a
-            href="/#contact"
+          <Link
+            to="/investment"
             onClick={() => setOpen(false)}
             className="block bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground text-center"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       )}
     </nav>
