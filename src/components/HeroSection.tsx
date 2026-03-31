@@ -1,6 +1,6 @@
 import heroImage from "@/assets/hero-coach.jpg";
 import marathonImage from "@/assets/hero-marathon.jpg";
-import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
