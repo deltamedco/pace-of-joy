@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactSection from "@/components/ContactSection";
 import { Check, ArrowRight } from "lucide-react";
 
 const packages = [
