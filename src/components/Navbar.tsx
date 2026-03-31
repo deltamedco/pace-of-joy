@@ -4,11 +4,10 @@ import { Link, useLocation } from "react-router-dom";
 import arynLogo from "@/assets/aryn-logo.png";
 
 const links = [
-  { label: "Home", href: "/#why-train", isHash: true },
+  { label: "Home", href: "/", isHash: false },
   { label: "Training", href: "/training-gear", isHash: false },
   { label: "Reviews", href: "/#reviews", isHash: true },
   { label: "Investment", href: "/investment", isHash: false },
-  { label: "Contact", href: "/#contact", isHash: true },
 ];
 
 const Navbar = () => {
