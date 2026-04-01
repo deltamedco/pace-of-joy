@@ -13,28 +13,33 @@ const AboutMe = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
             <p>
-              Hi, I'm <span className="text-foreground font-semibold">Aryn</span> — a passionate running coach dedicated to helping runners of all levels reach their full potential. Whether you're training for your first 5K or chasing a marathon PR, I'm here to guide you every step of the way.
+              Hi, I'm <span className="text-foreground font-semibold">Maulik Joshi</span> — an RRCA Certified Running Coach with over <span className="text-foreground font-semibold">5,000 miles</span>, <span className="text-foreground font-semibold">9+ years</span> of competitive experience, and <span className="text-foreground font-semibold">15 races</span> under my belt. I specialize in applying science-based periodization and disciplined pacing to guide athletes through the physical and mental demands of World Major Marathons and local race circuits.
             </p>
 
             <p>
-              With years of experience in distance running and coaching, I understand what it takes to build a training plan that works — one that balances performance, recovery, and the joy of running. My approach is rooted in science-backed methods, personalized attention, and a genuine love for the sport.
+              My own journey includes a personal <span className="text-foreground font-semibold">1-hour 39-minute reduction</span> in marathon time — proof that with the right plan, massive performance gains are possible. I know what it takes because I've lived it.
             </p>
 
             <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
-              My Philosophy
-            </h2>
-            <p>
-              I believe that every runner has untapped potential. My goal isn't just to make you faster — it's to make you a smarter, more resilient, and more confident athlete. Training should challenge you, but it should also be sustainable and enjoyable.
-            </p>
-
-            <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
-              What I Offer
+              Key Coaching Expertise
             </h2>
             <ul className="list-disc list-inside space-y-2">
-              <li>Personalized training plans tailored to your goals and schedule</li>
-              <li>Regular check-ins and plan adjustments based on your progress</li>
-              <li>Guidance on nutrition, recovery, and race-day strategy</li>
-              <li>A supportive coaching relationship built on trust and communication</li>
+              <li>Marathon & Half-Marathon Specialization with 15 competitive races of personal experience</li>
+              <li>Performance Progression — taking runners from "finisher" to competitive PR chasers</li>
+              <li>Guiding athletes from 5:00+ finish times to ambitious sub-3:30 performance levels</li>
+              <li>Data-Driven Training using VO2 max, heart rate zones, and split consistency</li>
+              <li>Comprehensive Race Support — hydration planning, gear selection, and taper-phase management</li>
+              <li>Mental Fortitude coaching to overcome "the Wall" and high-pressure race environments</li>
+              <li>Race Strategy & Logistics for World Major Marathons (Chicago, NYC, Berlin)</li>
+            </ul>
+
+            <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
+              Certifications & Education
+            </h2>
+            <ul className="list-disc list-inside space-y-2">
+              <li>RRCA Certified Running Coach — Road Runners Club of America</li>
+              <li>MBA, North Park University, Chicago</li>
+              <li>Master of Science, New York Tech, NY</li>
             </ul>
 
             <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
