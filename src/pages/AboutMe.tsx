@@ -21,16 +21,12 @@ const AboutMe = () => {
             </p>
 
             <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
-              Key Coaching Expertise
+              What I Bring
             </h2>
             <ul className="list-disc list-inside space-y-2">
-              <li>Marathon & Half-Marathon Specialization with 15 competitive races of personal experience</li>
-              <li>Performance Progression — taking runners from "finisher" to competitive PR chasers</li>
-              <li>Guiding athletes from 5:00+ finish times to ambitious sub-3:30 performance levels</li>
-              <li>Data-Driven Training using VO2 max, heart rate zones, and split consistency</li>
-              <li>Comprehensive Race Support — hydration planning, gear selection, and taper-phase management</li>
-              <li>Mental Fortitude coaching to overcome "the Wall" and high-pressure race environments</li>
-              <li>Race Strategy & Logistics for World Major Marathons (Chicago, NYC, Berlin)</li>
+              <li>Science-based periodization with data-driven pacing (VO2 max, HR zones, split analysis)</li>
+              <li>World Major Marathon strategy & logistics (Chicago, NYC, Berlin)</li>
+              <li>Mental fortitude coaching for high-pressure race environments</li>
             </ul>
 
             <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
