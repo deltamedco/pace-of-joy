@@ -24,7 +24,7 @@ const AboutMe = () => {
               Key Coaching Expertise
             </h2>
             <p>
-              I design high-impact Marathon and Half-Marathon plans that take runners from "finisher" to competitive PR chasers — guiding athletes from 5:00+ finishes to sub-3:30 performance levels. My data-driven approach leverages VO2 max, heart rate zones, and split analysis to optimize every training block, while providing full race-day support including hydration, gear, and taper management. I also coach mental fortitude techniques to overcome challenges like "hitting the Wall" in high-pressure environments.
+              I design high-impact Marathon and Half-Marathon plans that take runners from "finisher" to competitive PR chasers — guiding athletes from 5:00+ finishes to sub-3:30 performance levels. I also coach mental fortitude techniques to overcome challenges like "hitting the Wall" in high-pressure environments. As an RRCA Certified Coach, I ensure safe, effective, and inclusive programming for diverse athlete populations.
             </p>
 
             <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
