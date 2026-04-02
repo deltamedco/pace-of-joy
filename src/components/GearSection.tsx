@@ -15,7 +15,7 @@ const gearItems = [
   },
   {
     icon: Shirt,
-    title: "Technical Apparel",
+    title: "Running Apparel",
     description:
       "Moisture-wicking, non-cotton fabrics to prevent chafing, with seasonal gear planning for all conditions.",
   },
