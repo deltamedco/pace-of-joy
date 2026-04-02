@@ -20,6 +20,10 @@ const AboutMe = () => {
               My own journey includes a personal <span className="text-foreground font-semibold">1-hour 39-minute reduction</span> in marathon time — proof that with the right plan, massive performance gains are possible. I know what it takes because I've lived it.
             </p>
 
+            <p>
+              Over the past <span className="text-foreground font-semibold">8 years</span>, I've had the privilege of helping <span className="text-foreground font-semibold">over a dozen runners</span> turn their marathon dreams into reality — whether through direct coaching, pacing support, or simply sharing hard-earned knowledge along the way. From first-time marathoners crossing the finish line to seasoned runners chasing new PRs, there's nothing more rewarding than watching someone accomplish a race they once thought was out of reach.
+            </p>
+
             <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
               Key Coaching Expertise
             </h2>
