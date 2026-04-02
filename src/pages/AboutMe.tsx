@@ -24,11 +24,8 @@ const AboutMe = () => {
               Over the past <span className="text-foreground font-semibold">8 years</span>, I've had the privilege of helping <span className="text-foreground font-semibold">over a dozen runners</span> turn their marathon dreams into reality — whether through direct coaching, pacing support, or simply sharing hard-earned knowledge along the way. From first-time marathoners crossing the finish line to seasoned runners chasing new PRs, there's nothing more rewarding than watching someone accomplish a race they once thought was out of reach.
             </p>
 
-            <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
-              Key Coaching Expertise
-            </h2>
             <p>
-              I design high-impact Marathon and Half-Marathon plans that take runners from "finisher" to competitive PR chasers — guiding athletes from 5:00+ finishes to sub-3:30 performance levels. I also coach mental fortitude techniques to overcome challenges like "hitting the Wall" in high-pressure environments. As an RRCA Certified Coach, I ensure safe, effective, and inclusive programming for diverse athlete populations.
+              I design high-impact Marathon and Half-Marathon plans that take runners from "finisher" to competitive PR chasers — guiding athletes from 5:00+ finishes to sub-3:30 performance levels. Most importantly, as an RRCA Certified Coach, I ensure safe, effective, and inclusive programming for diverse athlete populations.
             </p>
 
             <h2 className="font-heading text-2xl font-bold text-foreground pt-4">
