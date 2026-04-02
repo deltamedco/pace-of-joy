@@ -54,9 +54,23 @@ const TrainingOverviewSection = () => {
 
         {/* All three columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+          <div>
+            <h3 className="font-heading text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+              <span className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center">
+                🏃
+              </span>
+              Training Plan
+            </h3>
+            <ul className="space-y-3">
+              {training.map((item) => (
+                <li key={item.title} className="text-muted-foreground text-sm leading-relaxed flex gap-3">
+                  <span className="text-primary mt-1 shrink-0">•</span>
+                  <span><span className="font-medium text-foreground">{item.title}:</span> {item.description}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Nutrition & Mental */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           <div>
             <h3 className="font-heading text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <span className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center">
