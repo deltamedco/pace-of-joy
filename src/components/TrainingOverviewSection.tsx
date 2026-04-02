@@ -52,25 +52,8 @@ const TrainingOverviewSection = () => {
           </h2>
         </div>
 
-        {/* Personalized Training */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
-          {training.map((item) => (
-            <div
-              key={item.title}
-              className="bg-card rounded-lg p-8 border border-border hover:border-primary/30 transition-colors group"
-            >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                <item.icon className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
-                {item.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {item.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        {/* All three columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
 
         {/* Nutrition & Mental */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
