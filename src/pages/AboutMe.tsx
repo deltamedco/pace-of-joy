@@ -13,7 +13,7 @@ const AboutMe = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
             <p>
-              Hi, I'm <span className="text-foreground font-semibold">Maulik Joshi</span> — an RRCA Certified Running Coach with over <span className="text-foreground font-semibold">5,000 miles</span>, <span className="text-foreground font-semibold">9+ years</span> of competitive experience, and <span className="text-foreground font-semibold">15 races</span> under my belt. I specialize in applying science-based periodization and disciplined pacing to guide athletes through the physical and mental demands of World Major Marathons and local race circuits.
+              Hi, I'm <span className="text-foreground font-semibold">Maulik Joshi</span> — an RRCA Certified Running Coach with over <span className="text-foreground font-semibold">5,000 miles</span>, <span className="text-foreground font-semibold">9+ years</span> of competitive experience, and <span className="text-foreground font-semibold">20+ half or full marathons</span> under my belt. I specialize in applying science-based periodization and disciplined pacing to guide athletes through the physical and mental demands of World Major Marathons and local race circuits.
             </p>
 
             <p>
