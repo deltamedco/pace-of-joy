@@ -93,7 +93,7 @@ const TrainingOverviewSection = () => {
               <span className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center">
                 🧠
               </span>
-              Mental Fortitude & Race Execution
+              Race Execution
             </h3>
             <ul className="space-y-3">
               {mental.map((item, i) => (
