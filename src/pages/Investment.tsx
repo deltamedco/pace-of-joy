@@ -124,16 +124,6 @@ const Investment = () => {
                   ))}
                 </ul>
 
-                <a
-                  href="/#contact"
-                  className={`flex items-center justify-center gap-2 font-heading text-sm font-semibold uppercase tracking-wider px-6 py-3 rounded-lg transition-all ${
-                    pkg.highlight
-                      ? "bg-gradient-gold text-primary-foreground hover:opacity-90"
-                      : "border border-primary/40 text-primary hover:bg-primary/10"
-                  }`}
-                >
-                  Get Started <ArrowRight className="w-4 h-4" />
-                </a>
               </div>
             ))}
           </div>
