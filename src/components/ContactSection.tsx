@@ -28,7 +28,7 @@ const ContactSection = () => {
           {/* Contact info */}
           <div className="space-y-8">
             <p className="text-muted-foreground leading-relaxed">
-              Whether you're chasing a Boston Qualifier or running your first marathon, let's build a plan that gets you there.
+              Whether you're chasing a personal best or running your first marathon, let's build a plan that gets you there.
             </p>
             <div className="space-y-4">
               <a
