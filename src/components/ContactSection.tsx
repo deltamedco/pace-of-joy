@@ -1,4 +1,5 @@
 import { Mail, Phone, Send } from "lucide-react";
+import stravaQr from "@/assets/strava-qr.png";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
