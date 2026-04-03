@@ -9,7 +9,7 @@ const gearItems = [
   },
   {
     icon: RotateCcw,
-    title: "Two-Shoe Rotation",
+    title: "Shoe Rotations",
     description:
       "Rotating daily trainers and dedicated speed/race shoes to prolong footwear life and provide varied stimuli.",
   },
