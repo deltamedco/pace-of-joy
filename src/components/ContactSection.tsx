@@ -58,7 +58,7 @@ const ContactSection = () => {
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="flex flex-col space-y-4 h-full">
             <input
               type="text"
               placeholder="Your Name"
