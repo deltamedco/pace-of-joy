@@ -51,6 +51,10 @@ const ContactSection = () => {
                 <span className="text-sm">774.266.1850</span>
               </a>
             </div>
+            <div className="mt-6 p-4 bg-card rounded-lg border border-border text-center">
+              <p className="text-sm font-semibold text-foreground mb-3">Connect with me on Strava</p>
+              <img src={stravaQr} alt="Strava QR Code" className="w-32 h-32 mx-auto rounded-md" />
+            </div>
           </div>
 
           {/* Form */}
