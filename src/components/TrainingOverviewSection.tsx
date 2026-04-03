@@ -91,7 +91,7 @@ const TrainingOverviewSection = () => {
           <div>
             <h3 className="font-heading text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <span className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center">
-                🧠
+                🏁
               </span>
               Race Execution
             </h3>
