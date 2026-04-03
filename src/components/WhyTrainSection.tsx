@@ -28,9 +28,6 @@ const WhyTrainSection = () => {
     <section id="why-train" className="py-24 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary font-heading text-sm font-semibold uppercase tracking-[0.3em] mb-3">
-            The ARYN Method
-          </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
             Why Train With Coach Maulik?
           </h2>
