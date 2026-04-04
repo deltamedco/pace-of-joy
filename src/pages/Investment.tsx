@@ -111,7 +111,7 @@ const Investment = () => {
                   <p className="text-foreground text-base">{pkg.duration}</p>
                 </div>
 
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-base">
                   {pkg.focus}
                 </p>
 
