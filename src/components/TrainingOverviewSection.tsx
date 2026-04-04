@@ -44,7 +44,7 @@ const TrainingOverviewSection = () => {
     <section id="training" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary font-heading text-sm font-semibold uppercase tracking-[0.3em] mb-3">
+          <p className="text-primary font-heading text-base font-semibold uppercase tracking-[0.3em] mb-3">
             What to Expect
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
