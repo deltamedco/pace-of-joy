@@ -36,7 +36,7 @@ const Navbar = () => {
                 key={l.label}
                 href={l.href}
                 onClick={() => handleClick(l)}
-                className="text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+                className="font-bold text-[#0a1628] hover:text-primary transition-colors text-lg"
               >
                 {l.label}
               </a>
@@ -44,7 +44,7 @@ const Navbar = () => {
               <Link
                 key={l.label}
                 to={l.href}
-                className="text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+                className="font-bold text-[#0a1628] hover:text-primary transition-colors text-lg"
               >
                 {l.label}
               </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
           )}
           <Link
             to="/investment"
-            className="bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground hover:opacity-90 transition-opacity"
+            className="bg-gradient-gold font-heading font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground hover:opacity-90 transition-opacity text-base"
           >
             Get Started
           </Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 key={l.label}
                 href={l.href}
                 onClick={() => handleClick(l)}
-                className="block text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+                className="block font-bold text-[#0a1628] hover:text-primary transition-colors text-lg"
               >
                 {l.label}
               </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 key={l.label}
                 to={l.href}
                 onClick={() => setOpen(false)}
-                className="block text-sm font-bold text-[#0a1628] hover:text-primary transition-colors"
+                className="block font-bold text-[#0a1628] hover:text-primary transition-colors text-lg"
               >
                 {l.label}
               </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
           <Link
             to="/investment"
             onClick={() => setOpen(false)}
-            className="block bg-gradient-gold font-heading text-xs font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground text-center"
+            className="block bg-gradient-gold font-heading font-semibold uppercase tracking-wider px-5 py-2 rounded text-primary-foreground text-center text-base"
           >
             Get Started
           </Link>
