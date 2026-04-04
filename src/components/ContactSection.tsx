@@ -48,7 +48,7 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-xl">774.266.1850</span>
+                <span className="text-xl font-semibold">774.266.1850</span>
               </a>
             </div>
             <div className="mt-6 p-4 bg-card rounded-lg border border-border text-center">
