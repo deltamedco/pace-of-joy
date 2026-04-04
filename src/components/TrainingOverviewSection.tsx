@@ -63,7 +63,7 @@ const TrainingOverviewSection = () => {
             </h3>
             <ul className="space-y-3">
               {training.map((item) => (
-                <li key={item.title} className="text-muted-foreground text-sm leading-relaxed flex gap-3">
+                <li key={item.title} className="text-muted-foreground text-base leading-relaxed flex gap-3">
                   <span className="text-primary mt-1 shrink-0">•</span>
                   <span><span className="font-medium text-foreground">{item.title}:</span> {item.description}</span>
                 </li>
@@ -80,7 +80,7 @@ const TrainingOverviewSection = () => {
             </h3>
             <ul className="space-y-3">
               {nutrition.map((item, i) => (
-                <li key={i} className="text-muted-foreground text-sm leading-relaxed flex gap-3">
+                <li key={i} className="text-muted-foreground text-base leading-relaxed flex gap-3">
                   <span className="text-primary mt-1 shrink-0">•</span>
                   {item}
                 </li>
@@ -97,7 +97,7 @@ const TrainingOverviewSection = () => {
             </h3>
             <ul className="space-y-3">
               {mental.map((item, i) => (
-                <li key={i} className="text-muted-foreground text-sm leading-relaxed flex gap-3">
+                <li key={i} className="text-muted-foreground text-base leading-relaxed flex gap-3">
                   <span className="text-primary mt-1 shrink-0">•</span>
                   {item}
                 </li>
