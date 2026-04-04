@@ -119,7 +119,7 @@ const Investment = () => {
                   {pkg.features.map((feature, i) => (
                     <li key={i} className="flex gap-3 text-sm">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                      <span className="text-muted-foreground leading-relaxed text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
