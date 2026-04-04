@@ -18,8 +18,8 @@ const HeroSection = () => {
             </p>
 
             <div className="gold-border-accent pl-4 mb-8">
-              <p className="font-heading text-2xl font-semibold text-primary">Maulik Joshi</p>
-              <p className="text-foreground/70 text-sm">RRCA Certified Running Coach</p>
+              <p className="font-heading font-semibold text-primary text-3xl">Maulik Joshi</p>
+              <p className="text-foreground/70 text-base">RRCA Certified Running Coach</p>
             </div>
 
             <div className="inline-block bg-gradient-gold rounded-lg px-6 py-4 mb-8">
