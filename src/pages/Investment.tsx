@@ -69,7 +69,7 @@ const Investment = () => {
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
               Your Investment
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed text-lg">
               Every package includes the complimentary Foundation phase to build your base before
               race-specific training begins.
             </p>
