@@ -20,6 +20,22 @@ const packages = [
     highlight: false,
   },
   {
+    name: "The 5K / 10K",
+    subtitle: "Short-Distance Training",
+    price: "$150",
+    priceNote: "",
+    duration: "4 to 6 Weeks",
+    focus:
+      "A focused plan for shorter race distances with personalized coaching to hit your target time.",
+    features: [
+      "Personalized running plan tailored to your fitness level and goal time",
+      "Two 30-minute one-on-one coaching calls",
+      "4 to 6 weeks of ongoing support and plan adjustments",
+      "Unlimited email/message support with 24–48 hour response time",
+    ],
+    highlight: false,
+  },
+  {
     name: "The Half Marathon",
     subtitle: "13.1-Mile Training",
     price: "$300",
@@ -75,7 +91,7 @@ const Investment = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
