@@ -65,7 +65,7 @@ const TrainingOverviewSection = () => {
               {training.map((item) => (
                 <li key={item.title} className="text-muted-foreground text-lg leading-relaxed flex gap-3">
                   <span className="text-primary mt-1 shrink-0">•</span>
-                  <span className="text-lg"><span className="font-medium text-muted-foreground">{item.title}:</span> {item.description}</span>
+                  <span className="text-lg text-muted-foreground"><span className="font-medium text-muted-foreground">{item.title}:</span> {item.description}</span>
                 </li>
               ))}
             </ul>
