@@ -69,7 +69,7 @@ const Investment = () => {
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
               Your Investment
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed text-lg">
               Every package includes the complimentary Foundation phase to build your base before
               race-specific training begins.
             </p>
@@ -87,7 +87,7 @@ const Investment = () => {
               >
 
                 <div className="mb-6">
-                  <h3 className="font-heading text-2xl font-bold text-foreground">
+                  <h3 className="font-heading font-bold text-foreground text-3xl">
                     {pkg.name}
                   </h3>
                   <p className="text-primary text-sm font-semibold uppercase tracking-wider mt-1">
@@ -100,18 +100,18 @@ const Investment = () => {
                     {pkg.price}
                   </span>
                   {pkg.priceNote && (
-                    <p className="text-muted-foreground text-xs mt-1">{pkg.priceNote}</p>
+                    <p className="text-muted-foreground mt-1 text-xs">{pkg.priceNote}</p>
                   )}
                 </div>
 
                 <div className="gold-border-accent pl-4 mb-6">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-1">
+                  <p className="text-muted-foreground uppercase tracking-wider font-semibold mb-1 text-sm">
                     Duration
                   </p>
-                  <p className="text-sm text-foreground">{pkg.duration}</p>
+                  <p className="text-foreground text-base">{pkg.duration}</p>
                 </div>
 
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed mb-6 text-base">
                   {pkg.focus}
                 </p>
 
@@ -119,7 +119,7 @@ const Investment = () => {
                   {pkg.features.map((feature, i) => (
                     <li key={i} className="flex gap-3 text-sm">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                      <span className="text-muted-foreground leading-relaxed text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
