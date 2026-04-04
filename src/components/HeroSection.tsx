@@ -29,7 +29,7 @@ const HeroSection = () => {
               <p className="font-heading text-2xl font-bold text-primary-foreground">
                 1 Hr 39 Min
               </p>
-              <p className="text-xs text-primary-foreground/80">
+              <p className="text-primary-foreground/80 text-base">
                 Personal Marathon Time Reduction
               </p>
             </div>

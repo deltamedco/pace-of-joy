@@ -45,7 +45,7 @@ const WhyTrainSection = () => {
               <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-lg">
                 {feature.description}
               </p>
             </div>

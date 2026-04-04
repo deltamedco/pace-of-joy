@@ -28,31 +28,31 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Contact info */}
           <div className="space-y-8">
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-lg">
               Whether you're chasing a personal best or running your first marathon, let's build a plan that gets you there.
             </p>
             <div className="space-y-4">
               <a
                 href="mailto:aryn.coachmj@gmail.com"
-                className="flex items-center gap-4 text-foreground hover:text-primary transition-colors group"
+                className="flex items-center gap-4 text-foreground hover:text-primary transition-colors group text-xl"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-sm">aryn.coachmj@gmail.com</span>
+                <span className="text-xl">aryn.coachmj@gmail.com</span>
               </a>
               <a
                 href="tel:7742661850"
-                className="flex items-center gap-4 text-foreground hover:text-primary transition-colors group"
+                className="flex items-center gap-4 text-foreground hover:text-primary transition-colors group text-xl"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-sm">774.266.1850</span>
+                <span className="text-xl">774.266.1850</span>
               </a>
             </div>
             <div className="mt-6 p-4 bg-card rounded-lg border border-border text-center">
-              <p className="text-sm font-semibold text-foreground mb-3">Connect with me on Strava</p>
+              <p className="font-semibold text-foreground mb-3 text-xl">Connect with me on Strava</p>
               <img src={stravaQr} alt="Strava QR Code" className="w-32 h-32 mx-auto rounded-md" />
             </div>
           </div>
