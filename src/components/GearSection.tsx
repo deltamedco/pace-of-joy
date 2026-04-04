@@ -56,15 +56,15 @@ const GearSection = () => {
           {gearItems.map((item) => (
             <div
               key={item.title}
-              className="bg-card rounded-lg p-6 border border-border hover:border-primary/30 transition-colors group"
+              className="bg-card rounded-lg p-6 border border-border hover:border-primary/30 transition-colors group text-lg"
             >
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <item.icon className="w-5 h-5 text-primary" />
               </div>
-              <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground text-base leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-lg">
                 {item.description}
               </p>
             </div>

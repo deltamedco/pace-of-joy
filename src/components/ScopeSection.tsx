@@ -46,7 +46,7 @@ const ScopeSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
             What Not to Expect
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto text-base leading-relaxed">
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed text-lg">
             To maintain your safety and ensure the highest quality of specialized care, the following
             areas are outside the standard scope of a running coach.
           </p>
@@ -61,15 +61,15 @@ const ScopeSection = () => {
               <div className="w-12 h-12 rounded-lg bg-destructive/10 flex items-center justify-center mb-5">
                 <item.icon className="w-6 h-6 text-destructive" />
               </div>
-              <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
                 {item.title}
               </h3>
               <div className="space-y-2">
-                <p className="text-base leading-relaxed">
+                <p className="leading-relaxed text-lg">
                   <span className="text-primary font-semibold">Coach's Role: </span>
                   <span className="text-muted-foreground">{item.coachRole}</span>
                 </p>
-                <p className="text-base leading-relaxed">
+                <p className="leading-relaxed text-lg">
                   <span className="text-primary font-semibold">Your Action: </span>
                   <span className="text-muted-foreground">{item.athleteAction}</span>
                 </p>
