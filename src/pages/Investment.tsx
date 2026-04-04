@@ -100,7 +100,7 @@ const Investment = () => {
                     {pkg.price}
                   </span>
                   {pkg.priceNote && (
-                    <p className="text-muted-foreground text-xs mt-1">{pkg.priceNote}</p>
+                    <p className="text-muted-foreground mt-1 text-xs">{pkg.priceNote}</p>
                   )}
                 </div>
 
