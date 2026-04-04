@@ -23,7 +23,7 @@ const gearItems = [
     icon: Watch,
     title: "Wearable Tech Integration",
     description:
-      "Setup and utilization of GPS watches (Garmin, Coros) to monitor heart rate zones, cadence, and pace.",
+      "Setup and utilization of GPS watches (Garmin, Apple) to monitor heart rate zones, cadence, and pace.",
   },
   {
     icon: CheckCircle,
