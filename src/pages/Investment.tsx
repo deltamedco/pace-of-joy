@@ -105,7 +105,7 @@ const Investment = () => {
                 </div>
 
                 <div className="gold-border-accent pl-4 mb-6">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-1">
+                  <p className="text-muted-foreground uppercase tracking-wider font-semibold mb-1 text-sm">
                     Duration
                   </p>
                   <p className="text-sm text-foreground">{pkg.duration}</p>
