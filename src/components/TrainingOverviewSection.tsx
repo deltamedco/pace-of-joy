@@ -54,7 +54,7 @@ const TrainingOverviewSection = () => {
 
         {/* All three columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-          <div>
+          <div className="text-lg">
             <h3 className="font-heading text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <span className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center">
                 🏃
@@ -63,15 +63,15 @@ const TrainingOverviewSection = () => {
             </h3>
             <ul className="space-y-3">
               {training.map((item) => (
-                <li key={item.title} className="text-muted-foreground text-base leading-relaxed flex gap-3">
+                <li key={item.title} className="text-muted-foreground text-lg leading-relaxed flex gap-3">
                   <span className="text-primary mt-1 shrink-0">•</span>
-                  <span><span className="font-medium text-foreground">{item.title}:</span> {item.description}</span>
+                  <span className="text-lg"><span className="font-medium text-foreground">{item.title}:</span> {item.description}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div>
+          <div className="text-lg">
             <h3 className="font-heading text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <span className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center">
                 🍎
@@ -80,7 +80,7 @@ const TrainingOverviewSection = () => {
             </h3>
             <ul className="space-y-3">
               {nutrition.map((item, i) => (
-                <li key={i} className="text-muted-foreground text-base leading-relaxed flex gap-3">
+                <li key={i} className="text-muted-foreground text-lg leading-relaxed flex gap-3">
                   <span className="text-primary mt-1 shrink-0">•</span>
                   {item}
                 </li>
@@ -88,7 +88,7 @@ const TrainingOverviewSection = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="text-lg">
             <h3 className="font-heading text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <span className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center">
                 🏁
@@ -97,7 +97,7 @@ const TrainingOverviewSection = () => {
             </h3>
             <ul className="space-y-3">
               {mental.map((item, i) => (
-                <li key={i} className="text-muted-foreground text-base leading-relaxed flex gap-3">
+                <li key={i} className="text-muted-foreground text-lg leading-relaxed flex gap-3">
                   <span className="text-primary mt-1 shrink-0">•</span>
                   {item}
                 </li>
