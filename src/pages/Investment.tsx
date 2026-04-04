@@ -87,7 +87,7 @@ const Investment = () => {
               >
 
                 <div className="mb-6">
-                  <h3 className="font-heading text-2xl font-bold text-foreground">
+                  <h3 className="font-heading font-bold text-foreground text-3xl">
                     {pkg.name}
                   </h3>
                   <p className="text-primary text-sm font-semibold uppercase tracking-wider mt-1">
