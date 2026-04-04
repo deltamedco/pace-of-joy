@@ -108,7 +108,7 @@ const Investment = () => {
                   <p className="text-muted-foreground uppercase tracking-wider font-semibold mb-1 text-sm">
                     Duration
                   </p>
-                  <p className="text-sm text-foreground">{pkg.duration}</p>
+                  <p className="text-foreground text-base">{pkg.duration}</p>
                 </div>
 
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
