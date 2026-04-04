@@ -65,11 +65,11 @@ const ScopeSection = () => {
                 {item.title}
               </h3>
               <div className="space-y-2">
-                <p className="text-sm leading-relaxed">
+                <p className="text-base leading-relaxed">
                   <span className="text-primary font-semibold">Coach's Role: </span>
                   <span className="text-muted-foreground">{item.coachRole}</span>
                 </p>
-                <p className="text-sm leading-relaxed">
+                <p className="text-base leading-relaxed">
                   <span className="text-primary font-semibold">Your Action: </span>
                   <span className="text-muted-foreground">{item.athleteAction}</span>
                 </p>

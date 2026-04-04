@@ -64,7 +64,7 @@ const GearSection = () => {
               <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 {item.description}
               </p>
             </div>

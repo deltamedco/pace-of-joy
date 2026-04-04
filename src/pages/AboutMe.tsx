@@ -33,7 +33,7 @@ const AboutMe = () => {
             </h2>
             <ul className="list-disc list-inside space-y-2">
               <li>RRCA Certified Running Coach — Road Runners Club of America</li>
-              <li>MBA, North Park University, Chicago</li>
+              <li>Master of Business Administration, North Park University, Chicago</li>
               <li>Master of Science, New York Tech, NY</li>
             </ul>
 
