@@ -39,7 +39,7 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-xl">aryn.coachmj@gmail.com</span>
+                <span className="text-xl font-semibold">aryn.coachmj@gmail.com</span>
               </a>
               <a
                 href="tel:7742661850"
