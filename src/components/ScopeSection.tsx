@@ -19,7 +19,7 @@ const scopeItems = [
   },
   {
     icon: Dumbbell,
-    title: "Certified Strength or Weightlifting",
+    title: "Strength or Weightlifting",
     coachRole:
       "Provides bodyweight or light resistance routines specific to running stability.",
     athleteAction:
