@@ -20,8 +20,8 @@ const ContactSection = () => {
           <p className="text-primary font-heading text-sm font-semibold uppercase tracking-[0.3em] mb-3">
             Ready to Excel?
           </p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-            Contact Me Today
+<h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
+            Set up your free initial consultation today
           </h2>
         </div>
 
