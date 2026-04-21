@@ -1,4 +1,4 @@
-import { Trophy, MapPin, TrendingDown } from "lucide-react";
+import { Trophy, MapPin } from "lucide-react";
 import {
   Table,
   TableBody,
@@ -8,13 +8,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import {
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-  type ChartConfig,
-} from "@/components/ui/chart";
-import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts";
 
 type Race = {
   date: string;
