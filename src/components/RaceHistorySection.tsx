@@ -54,7 +54,7 @@ const RaceHistorySection = () => {
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
-            Race Experience & Progress
+            Key Races & Progress
           </h2>
           <p className="text-muted-foreground text-lg">
             A record of every race, every PR, and the journey behind the times.
