@@ -41,28 +41,6 @@ const races: Race[] = [
   { date: "Nov 2, 2025", year: 2025, type: "Full Marathon", race: "TCS New York City Marathon", location: "NYC, NY", time: "4:38:05", pace: "10:37", paceSeconds: 637, pr: false, major: true },
 ];
 
-const fullMarathonProgression = races
-  .filter((r) => r.type === "Full Marathon")
-  .map((r) => ({ date: r.date, year: r.year, race: r.race, time: r.time, paceSeconds: r.paceSeconds }));
-
-const halfMarathonProgression = races
-  .filter((r) => r.type === "Half Marathon")
-  .map((r) => ({ date: r.date, year: r.year, race: r.race, time: r.time, paceSeconds: r.paceSeconds }));
-
-const formatPace = (seconds: number) => {
-  const m = Math.floor(seconds / 60);
-  const s = Math.round(seconds % 60);
-  return `${m}:${s.toString().padStart(2, "0")}`;
-};
-
-const fullChartConfig = {
-  paceSeconds: { label: "Pace", color: "hsl(var(--primary))" },
-} satisfies ChartConfig;
-
-const halfChartConfig = {
-  paceSeconds: { label: "Pace", color: "hsl(var(--primary))" },
-} satisfies ChartConfig;
-
 const stats = [
   { label: "Total Races", value: races.length.toString() },
   { label: "Marathon PR", value: "3:24:51" },
