@@ -1,4 +1,4 @@
-import { Trophy, MapPin, TrendingDown } from "lucide-react";
+import { Trophy, MapPin } from "lucide-react";
 import {
   Table,
   TableBody,
@@ -8,13 +8,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import {
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-  type ChartConfig,
-} from "@/components/ui/chart";
-import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts";
 
 type Race = {
   date: string;
@@ -47,28 +40,6 @@ const races: Race[] = [
   { date: "Oct 12, 2025", year: 2025, type: "Full Marathon", race: "BOA Chicago Marathon", location: "Chicago, IL", time: "3:24:51", pace: "7:49", paceSeconds: 469, pr: true, major: true },
   { date: "Nov 2, 2025", year: 2025, type: "Full Marathon", race: "TCS New York City Marathon", location: "NYC, NY", time: "4:38:05", pace: "10:37", paceSeconds: 637, pr: false, major: true },
 ];
-
-const fullMarathonProgression = races
-  .filter((r) => r.type === "Full Marathon")
-  .map((r) => ({ date: r.date, year: r.year, race: r.race, time: r.time, paceSeconds: r.paceSeconds }));
-
-const halfMarathonProgression = races
-  .filter((r) => r.type === "Half Marathon")
-  .map((r) => ({ date: r.date, year: r.year, race: r.race, time: r.time, paceSeconds: r.paceSeconds }));
-
-const formatPace = (seconds: number) => {
-  const m = Math.floor(seconds / 60);
-  const s = Math.round(seconds % 60);
-  return `${m}:${s.toString().padStart(2, "0")}`;
-};
-
-const fullChartConfig = {
-  paceSeconds: { label: "Pace", color: "hsl(var(--primary))" },
-} satisfies ChartConfig;
-
-const halfChartConfig = {
-  paceSeconds: { label: "Pace", color: "hsl(var(--primary))" },
-} satisfies ChartConfig;
 
 const stats = [
   { label: "Total Races", value: races.length.toString() },
@@ -105,125 +76,6 @@ const RaceHistorySection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Marathon progression chart */}
-        <div className="bg-card border border-border rounded-lg p-6 mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <TrendingDown className="w-5 h-5 text-primary" />
-            <h3 className="font-heading text-xl font-bold text-foreground">
-              Marathon Pace Progression
-            </h3>
-          </div>
-          <p className="text-sm text-muted-foreground mb-4">
-            From 11:34/mi in 2018 to 7:49/mi in 2025 — a 1:39 marathon time reduction.
-          </p>
-          <ChartContainer config={fullChartConfig} className="h-[260px] w-full">
-            <LineChart data={fullMarathonProgression} margin={{ left: 0, right: 16, top: 8, bottom: 8 }}>
-              <CartesianGrid strokeDasharray="3 3" className="stroke-border/40" />
-              <XAxis
-                dataKey="date"
-                tick={{ fontSize: 11 }}
-                tickFormatter={(v: string) => v.split(",")[1]?.trim() ?? v}
-              />
-              <YAxis
-                domain={["dataMin - 30", "dataMax + 30"]}
-                tickFormatter={formatPace}
-                tick={{ fontSize: 11 }}
-                reversed
-                width={48}
-                label={{ value: "Pace (min/mi)", angle: -90, position: "insideLeft", style: { fontSize: 11, fill: "hsl(var(--muted-foreground))" } }}
-              />
-              <ChartTooltip
-                content={
-                  <ChartTooltipContent
-                    labelFormatter={(_, payload) => {
-                      const p = payload?.[0]?.payload as typeof fullMarathonProgression[number] | undefined;
-                      return p ? `${p.race} — ${p.date}` : "";
-                    }}
-                    formatter={(value, _name, _item, _i, payload) => {
-                      const p = payload as unknown as typeof fullMarathonProgression[number];
-                      return (
-                        <div className="flex flex-col">
-                          <span className="text-foreground font-medium">{p.time}</span>
-                          <span className="text-muted-foreground text-xs">
-                            {formatPace(value as number)}/mi
-                          </span>
-                        </div>
-                      );
-                    }}
-                  />
-                }
-              />
-              <Line
-                type="monotone"
-                dataKey="paceSeconds"
-                stroke="hsl(var(--primary))"
-                strokeWidth={2.5}
-                dot={{ r: 4, fill: "hsl(var(--primary))" }}
-                activeDot={{ r: 6 }}
-              />
-            </LineChart>
-          </ChartContainer>
-        </div>
-
-        {/* Half marathon progression chart */}
-        <div className="bg-card border border-border rounded-lg p-6 mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <TrendingDown className="w-5 h-5 text-primary" />
-            <h3 className="font-heading text-xl font-bold text-foreground">
-              Half Marathon Pace Progression
-            </h3>
-          </div>
-          <p className="text-sm text-muted-foreground mb-4">
-            From 8:53/mi in 2019 to a 7:33/mi PR in 2025.
-          </p>
-          <ChartContainer config={halfChartConfig} className="h-[240px] w-full">
-            <LineChart data={halfMarathonProgression} margin={{ left: 0, right: 16, top: 8, bottom: 8 }}>
-              <CartesianGrid strokeDasharray="3 3" className="stroke-border/40" />
-              <XAxis
-                dataKey="date"
-                tick={{ fontSize: 11 }}
-                tickFormatter={(v: string) => v.split(",")[1]?.trim() ?? v}
-              />
-              <YAxis
-                domain={["dataMin - 20", "dataMax + 20"]}
-                tickFormatter={formatPace}
-                tick={{ fontSize: 11 }}
-                reversed
-                width={48}
-              />
-              <ChartTooltip
-                content={
-                  <ChartTooltipContent
-                    labelFormatter={(_, payload) => {
-                      const p = payload?.[0]?.payload as typeof halfMarathonProgression[number] | undefined;
-                      return p ? `${p.race} — ${p.date}` : "";
-                    }}
-                    formatter={(value, _name, _item, _i, payload) => {
-                      const p = payload as unknown as typeof halfMarathonProgression[number];
-                      return (
-                        <div className="flex flex-col">
-                          <span className="text-foreground font-medium">{p.time}</span>
-                          <span className="text-muted-foreground text-xs">
-                            {formatPace(value as number)}/mi
-                          </span>
-                        </div>
-                      );
-                    }}
-                  />
-                }
-              />
-              <Line
-                type="monotone"
-                dataKey="paceSeconds"
-                stroke="hsl(var(--primary))"
-                strokeWidth={2.5}
-                dot={{ r: 4, fill: "hsl(var(--primary))" }}
-                activeDot={{ r: 6 }}
-              />
-            </LineChart>
-          </ChartContainer>
         </div>
 
         {/* Race history table */}
