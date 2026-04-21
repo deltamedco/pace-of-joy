@@ -142,7 +142,7 @@ const RaceHistorySection = () => {
                       return p ? `${p.race} — ${p.date}` : "";
                     }}
                     formatter={(value, _name, _item, _i, payload) => {
-                      const p = payload as typeof fullMarathonProgression[number];
+                      const p = payload as unknown as typeof fullMarathonProgression[number];
                       return (
                         <div className="flex flex-col">
                           <span className="text-foreground font-medium">{p.time}</span>
@@ -201,7 +201,7 @@ const RaceHistorySection = () => {
                       return p ? `${p.race} — ${p.date}` : "";
                     }}
                     formatter={(value, _name, _item, _i, payload) => {
-                      const p = payload as typeof halfMarathonProgression[number];
+                      const p = payload as unknown as typeof halfMarathonProgression[number];
                       return (
                         <div className="flex flex-col">
                           <span className="text-foreground font-medium">{p.time}</span>
