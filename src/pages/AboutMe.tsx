@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RaceHistorySection from "@/components/RaceHistorySection";
+import RunnerReflectionsSection from "@/components/RunnerReflectionsSection";
 
 const AboutMe = () => {
   return (
@@ -52,6 +53,7 @@ const AboutMe = () => {
         </div>
       </section>
       <RaceHistorySection />
+      <RunnerReflectionsSection />
       <Footer />
     </div>
   );
